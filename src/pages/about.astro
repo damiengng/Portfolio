@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+	title="À propos | Damien Gennevoise"
+	description="À propos de Damien Gennevoise"
+>
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos"
+				tagline="Découvrez mon parcours et mes compétences."
+			>
+				<!-- 
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Damien"
+				/>
+				-->
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Présentation</h2>
+				<div class="content">
+					<p>
+						Étudiant passionné en informatique, je suis constamment
+						inspiré par l'univers en constante évolution de la
+						technologie.
+						<br />
+						<br />
+						 Je suis particulièrement intéressé par la gestion de
+						projet, car elle me permet de passer des concepts aux
+						réalisations pratiques.
+						<br />
+						 J'apprécie la coordination efficace, l'alignement des
+						ressources et l'atteinte des objectifs.
+						<br />
+						 Ce qui me motive, c'est de voir comment une
+						planification minutieuse se concrétise en projets
+						concrets qui génèrent de la valeur et ont un impact
+						significatif.
+						<br />
+						<br />
+						 Je suis toujours à l'affût de nouvelles opportunités et
+						de projets stimulants qui me permettent d'apprendre et
+						de grandir.
+						<br />
+						<br />
+						 Je suis également un passionné de voyages, de sport, et
+						d'automobile.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplôme</h2>
+				<div class="content">
+					<p>
+						Licence Informatique : Algorithmique et programmation,
+						mathématiques, technologies informatiques, informatique
+						fondamentale, systèmes et réseaux, traitement d'images,
+						gestion de projets, Iot
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>
+						Créatif, Autonome, Organisé, Polyvalent, Esprit d'équipe
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

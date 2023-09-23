@@ -1,0 +1,98 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon
+			icon="terminal-window"
+			color="var(--accent-regular)"
+			size="2.5rem"
+			gradient
+		/>
+		<h2>Développement</h2>
+		<p>
+			J'ai eu l'opportunité de travailler avec plusieurs langages de
+			programmation, notamment Java, Python, et bien d'autres, ainsi
+			qu'avec diverses technologies telles qu'Angular, Docker, et bien
+			plus encore, tout en développant une solide expérience dans la
+			gestion de bases de données.
+		</p>
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon
+			icon="strategy"
+			color="var(--accent-regular)"
+			size="2.5rem"
+			gradient
+		/>
+		<h2>Gestion de projet</h2>
+		<p>
+			Initié à la gestion de projet, notamment en utilisant les méthodes
+			agiles. J'ai eu l'occasion de collaborer avec des équipes de
+			développement et d'apprendre les bases de la coordination de projets
+			informatiques. Mon objectif est de continuer à acquérir de
+			l'expérience dans ce domaine passionnant tout en contribuant au
+			succès des projets futurs.
+		</p>
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon
+			icon="list"
+			color="var(--accent-regular)"
+			size="2.5rem"
+			gradient
+		/>
+		<h2>Réseau</h2>
+		<p>
+			J'ai eu l'occasion d'acquérir des connaissances en architecture et
+			en fonctionnement des réseaux informatiques, ainsi qu'une
+			compréhension approfondie de la programmation réseau. Mon parcours
+			m'a permis d'explorer en détail les protocoles, les architectures et
+			les défis inhérents aux réseaux modernes.
+		</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
