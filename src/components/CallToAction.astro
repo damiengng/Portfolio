@@ -3,7 +3,7 @@ interface Props {
 	href: string;
 }
 
-const { href } = "Portfolio" + Astro.props;
+const { href } = Astro.props;
 ---
 
 <a href={href}><slot /></a>
