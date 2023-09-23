@@ -1,7 +1,7 @@
 ---
 title: SpringBox Office
 publishDate: 2023-09-22 00:00:00
-img: /assets/springbox.png
+img: /Portfolio/assets/springbox.png
 img_alt: Page d'accueil SpringBox
 description: |
   Contribution au développement et à l'amélioration du produit SpringBox.
