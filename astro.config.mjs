@@ -1,7 +1,9 @@
 import { defineConfig } from 'astro/config';
 
+import netlify from "@astrojs/netlify/functions";
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://damiengng.github.io',
-    base: '/Portfolio',
+    output: 'server',
+    adapter: netlify(),
 });
