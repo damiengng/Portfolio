@@ -1,7 +1,7 @@
 ---
 title: UGEGreed
 publishDate: 2023-09-20 00:00:00
-img: /assets/tcp.jpeg
+img: /Portfolio/assets/tcp.jpeg
 img_alt: tcp image
 description: |
   Réaliser un système de calcul distribué en utilisant le protocole TCP.

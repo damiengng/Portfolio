@@ -1,7 +1,7 @@
 ---
 title: CloneWar
 publishDate: 2023-09-21 00:00:00
-img: /assets/clonewar.jpeg
+img: /Portfolio/assets/clonewar.jpeg
 img_alt: clonewar image
 description: |
   Écrire une application web qui analyse des fichiers jar pour détecter des codes communs .

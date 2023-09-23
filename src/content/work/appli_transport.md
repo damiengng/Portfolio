@@ -1,7 +1,7 @@
 ---
 title: Application de transport
 publishDate: 2023-09-21 00:00:00
-img: /assets/easymode.png
+img: /Portfolio/assets/easymode.png
 img_alt: EasyMode's logo
 description: |
   Développement d'un projet en mode Scrum

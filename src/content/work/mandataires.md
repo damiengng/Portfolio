@@ -1,7 +1,7 @@
 ---
 title: Site web pour mandataires judiciaires
 publishDate: 2023-09-19 00:00:00
-img: /assets/balance.png
+img: /Portfolio/assets/balance.png
 img_alt: mandataires judiciaires
 description: |
   Site web pour mandataires judiciaires

@@ -1,7 +1,7 @@
 ---
 title: Snake
 publishDate: 2023-09-18 00:00:00
-img: /assets/snake.png
+img: /Portfolio/assets/snake.png
 img_alt: snake
 description: |
   Implémentation du célèbre jeu Snake
